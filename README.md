@@ -19,4 +19,5 @@ Practicing with PostgreSQL server.
 4. \d : list relations(tables) within the database
 5. \i file_path : run sql script of the file path
 6. SELECT * FROM TABLE OFFSET 5 : select every rows from id 6 to the end
-7. 
+7. \d table_name: describe table with column names, types, etc
+8. \x : for extended display
