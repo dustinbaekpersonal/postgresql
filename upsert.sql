@@ -7,9 +7,9 @@
 -- This normally happens in distributed system, 2 servers sitting above load balancer
 
 -- INSERT INTO PERSON (FIRST_NAME, LAST_NAME, GENDER, DATE_OF_BIRTH, EMAIL, COUNTRY_OF_BIRTH)
--- VALUES ('CHRISTINE', 'KWON', 'FEMALE', DATE '1998-04-09', 'christinekwon@gmail.com', 'UK');
+-- VALUES ('BAR', 'FOO', 'FEMALE', DATE 'XXXX-XX-XX', 'BARFOO@gmail.com', 'UK');
 
 ---- if we were to make an update on email
 INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, GENDER, DATE_OF_BIRTH, EMAIL, COUNTRY_OF_BIRTH)
-VALUES (2, 'CHRISTINE', 'KWON', 'FEMALE', DATE '1998-04-09', 'christinekwonpersonal@gmail.com', 'UK')
+VALUES (2, 'BAR', 'FOO', 'FEMALE', DATE 'XXXX-XX-XX', 'BARFOO@gmail.com', 'UK')
 ON CONFLICT (ID) DO UPDATE SET EMAIL = EXCLUDED.EMAIL;
