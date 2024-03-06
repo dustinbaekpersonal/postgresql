@@ -1,6 +1,6 @@
 # postgresql
 
-Practicing with PostgreSQL server.
+Practicing with PostgreSQL server with psql.
 
 ## Agenda
 
